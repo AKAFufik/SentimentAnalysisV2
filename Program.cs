@@ -18,6 +18,7 @@ namespace SentimentAnalysis
             string[] lines = text.Split('\n');
             foreach (string line in lines)
             {
+
                 int score = GetSentimentScore(line, afinn);
                 switch (score)
                 {
