@@ -19,6 +19,8 @@ namespace SentimentAnalysis
             foreach (string line in lines)
             {
 
+
+
                 int score = GetSentimentScore(line, afinn);
                 switch (score)
                 {
