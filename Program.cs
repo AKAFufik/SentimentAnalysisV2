@@ -13,6 +13,7 @@ namespace SentimentAnalysis
             JObject afinn = JObject.Parse(File.ReadAllText(afinnFilePath));
 
 
+
             // Чтение текста из файла и его анализ
             string path = "text.txt";
             string text = ReadTextFromFile(path);
