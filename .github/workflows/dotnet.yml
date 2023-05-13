@@ -30,7 +30,7 @@ jobs:
     
       
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --configuration Release --no-build --verbosity normal
       
     - name: Run Sentiment Analysis
       run: dotnet run --SentimentAnalysisV2.csproj
