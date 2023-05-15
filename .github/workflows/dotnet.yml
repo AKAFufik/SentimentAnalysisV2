@@ -37,7 +37,10 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           dotnet-sonarscanner begin /k:"AKAFufik_SentimentAnalysisV2" /o:"akafufik" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet build
+          dotnet restore
+          dotnet build --configuration Release
+          dotnet test --configuration Release --no-build --verbosity normal
+          dotnet run --SentimentAnalysisV2.csproj
           dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
     
     
