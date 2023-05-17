@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SentimentAnalysisV2", "SentimentAnalysisV2.csproj", "{E8AEDDFF-1207-4CEA-9C38-ECE8429CAF16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentimentAnalysisV2Tests", "..\SentimentAnalysisV2Tests\SentimentAnalysisV2Tests.csproj", "{22415DA0-67BB-4F3B-BD54-A501DD556670}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentimentAnalysisV2", "Tests\SentimentAnalysisV2.Tests", "{22415DA0-67BB-4F3B-BD54-A501DD556670}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
