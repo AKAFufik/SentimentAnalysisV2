@@ -20,6 +20,7 @@ namespace SentimentAnalysis
             foreach (string line in lines)
             {
 
+
                 int score = sentimentAnalysis.GetSentimentScore(line, afinn);
                 switch (score)
                 {
