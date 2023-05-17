@@ -4,10 +4,11 @@ using System.Text.RegularExpressions;
 
 namespace SentimentAnalysis
 {
-    internal class Program
+    public class SentimentAnalysis
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            SentimentAnalysis sentimentAnalysis = new SentimentAnalysis();
             // Загрузка файла словаря AFINN в формате json
             string afinnFilePath = "AFINN-ru.json";
             JObject afinn = JObject.Parse(File.ReadAllText(afinnFilePath));
@@ -19,9 +20,7 @@ namespace SentimentAnalysis
             foreach (string line in lines)
             {
 
-
-
-                int score = GetSentimentScore(line, afinn);
+                int score = sentimentAnalysis.GetSentimentScore(line, afinn);
                 switch (score)
                 {
                     case int n when (n > 0):
@@ -43,7 +42,7 @@ namespace SentimentAnalysis
             }
         }
 
-        public static int GetSentimentScore(string text, JObject afinn)
+        public int GetSentimentScore(string text, JObject afinn)
         {
             // Удаление знаков препинания и других ненужных символов из текста
             Regex regex = new Regex(@"[^\w\s]+");
