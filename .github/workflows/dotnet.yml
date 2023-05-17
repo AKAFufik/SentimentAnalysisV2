@@ -22,9 +22,9 @@ jobs:
         dotnet-version: 6.0.x
             
     - name: Generate coverage report
-      run: |
-          cd ./Tests/SentimentAnalysisV2.Tests/SentimentAnalysisV2Tests.csproj
-          dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+      run: dotnet test Tests/SentimentAnalysisV2.Tests/SentimentAnalysisV2Tests.csproj
+/p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+  
     - name: Publish coverage report to coveralls.io
       uses: coverallsapp/github-action@v1.0.1
       with:
