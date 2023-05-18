@@ -1,12 +1,10 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SentimentAnalysisV2", "SentimentAnalysisV2.csproj", "{E8AEDDFF-1207-4CEA-9C38-ECE8429CAF16}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SentimentAnalysisV2Tests", "..\SentimentAnalysisV2Tests\SentimentAnalysisV2Tests.csproj", "{110A96F7-388C-4DE6-8753-9CF30C8988F7}"
-EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
